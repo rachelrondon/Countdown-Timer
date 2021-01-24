@@ -25,7 +25,9 @@ class App extends React.Component {
         (error) => console.log(error))
   }
   render() {
+    
     const data = this.state.theme && this.state.theme.data && this.state.theme.data.data;
+
     return (
       this.state.theme && (
         <ThemeProvider theme={data}>
